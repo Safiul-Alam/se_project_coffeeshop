@@ -102,31 +102,38 @@
           <h2 class="reservation__title">Book a table</h2>
           <form action="" class="reservation__form form">
             <fieldset class="form__fieldset">
-              <label for="" class="form__label form__label_name"
+              <label for="name" class="form__label form__label_name"
                 >Name *
                 <input
                   type="text"
+                  id="name"
                   class="form__input form__input_name"
                   placeholder="Name Surname"
                 />
               </label>
-              <label for="" class="form__label"
+              <label for="number-of-guests" class="form__label"
                 >Number of guests *
                 <input
                   type="number"
+                  id="number-of-guests"
                   min="1"
                   max="8"
                   class="form__input"
                   placeholder="1-8"
                 />
               </label>
-              <label for="" class="form__label"
+              <label for="date-time" class="form__label"
                 >Date & time *
-                <input type="datetime-local" class="form__input" />
+                <input
+                  id="date-time"
+                  type="datetime-local"
+                  class="form__input"
+                />
               </label>
-              <label for="" class="form__label">
+              <label for="email" class="form__label">
                 Your email *
                 <input
+                  id="email"
                   type="email"
                   class="form__input"
                   placeholder="email@email.com"
@@ -135,8 +142,8 @@
             </fieldset>
             <button class="form__button">Book a table</button>
 
-            <label for="" class="form__label form__label_type_checkbox">
-              <input type="checkbox" class="form__checkbox" />
+            <label for="checkbox" class="form__label form__label_type_checkbox">
+              <input id="checkbox" type="checkbox" class="form__checkbox" />
               I agree with the term of use
             </label>
           </form>
