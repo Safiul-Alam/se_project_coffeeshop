@@ -2,19 +2,19 @@
   padding: 100px 0 120px;
   background-color: #d9e7ff;
   background-image: url(../images/background_reservation.svg);
-  font-family: "Inter";
+  background-size: cover;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   color: #000000;
 }
 
 .reservation__title {
   padding: 0 0 80px;
   text-align: center;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  font-weight: 500;
-  font-style: normal;
 }
 
 .reservation__form {
@@ -35,9 +35,13 @@
   margin-bottom: 32px;
   display: block;
   /*form are inline element
-  needed to conver
+  needed to convert
   to block for margin
   to work */
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__label_name {
@@ -54,6 +58,7 @@
 }
 
 .form__input {
+  border-radius: 4px;
   display: block;
   width: 100%;
   padding: 0 0 0 12px;
@@ -61,6 +66,9 @@
   margin-top: 8px;
   border-radius: 4px;
   height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
 }
 
 .form__input_name {
@@ -78,13 +86,15 @@
   opacity: 1;
   height: 60px;
   background-color: #2f80ed;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: white;
+  transition: 1.5s ease-in-out;
 }
 
 .form__button:hover {
   opacity: 0.7;
-  transition: linear;
 }
 
 .form__checkbox {

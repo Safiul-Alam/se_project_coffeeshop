@@ -5,9 +5,13 @@
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
-  font-family: "inter", Arial, sans-serif;
+
+  font-style: normal;
+  font-weight: normal;
+
   font-size: 16px;
   line-height: 20px;
+
   color: #000000;
   background-color: #ffffff;
 }
