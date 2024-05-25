@@ -11,42 +11,7 @@
   flex-direction: column;
   font-style: normal;
   font-weight: normal;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-.nav__logo {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  left: -50px;
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-  font-family: "Inter", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.nav__link {
-  color: #000;
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: #2f80ed;
+  box-sizing: border-box;
 }
 
 .header__title {
@@ -65,6 +30,7 @@
   max-width: 729px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
+  font-weight: normal;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;

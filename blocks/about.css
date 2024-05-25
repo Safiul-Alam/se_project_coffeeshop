@@ -1,3 +1,17 @@
+/*tutor said it looks ok */
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
 .about {
   background-color: #0a2850;
   display: flex;
@@ -11,8 +25,7 @@
   margin: 100px 0 0 80px;
   z-index: 1;
   color: white;
-  /* font-family: "Inter";
-  font-style: normal; */
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
@@ -31,10 +44,8 @@
 .about__paragraph {
   margin: 0 0 20px;
   padding: 0;
-  font-family: "Noto Serif";
-  /* font-style: normal;
-  font-weight: normal; */
-  font-style: 20px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
   line-height: 30px;
   color: white;
 }
@@ -46,26 +57,14 @@
 .about__circle {
   height: 426px;
   width: 426px;
-  background-color: #4848ea;
+  background-color: #2f80ed;
   position: absolute;
   left: -129px;
   top: -152px;
   border-radius: 50%;
 }
 
+/*tutor said it looks ok */
 .about__circle_animation_blured {
   animation: pulsate 1.3s ease-in-out infinite;
-}
-
-@keyframes pulsate {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-  }
 }

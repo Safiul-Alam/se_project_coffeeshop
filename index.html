@@ -6,10 +6,21 @@
     <meta name="author" content="Mohammad Alam" />
     <meta name="description" content="TripleTen Coffee Shop" />
     <meta name="keywords" content="HTML, CSS" />
-    <title>TripleTen Coffe Shop Project for sprint 2</title>
+    <title>TripleTen Coffee Shop Project for sprint 2</title>
 
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -31,14 +42,14 @@
 
         <h1 class="header__title">
           <span class="header__span-accent">Specialty coffee</span> in the
-          Triple Peaks Libraray
+          Triple Peaks Library
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
         </p>
         <img
-          src="../images/inside_coffee_shop.png"
+          src="images/inside_coffee_shop.png"
           alt="inside coffee shop image"
           class="header__image"
         />
@@ -62,6 +73,7 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
+
           <div class="recipes__videos">
             <div>
               <iframe
@@ -95,15 +107,16 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
 
-          <form action="#" class="reservation__form form">
+          <form action="/Server-page-address" class="reservation__form form">
             <fieldset id="form__fieldset" class="form__fieldset">
-              <label for="name" class="form__label form__label_name"
+              <label for="name" class="form__label form__label_id_name"
                 >Name *
                 <input
                   type="text"
                   id="name"
-                  class="form__input form__input_name"
+                  class="form__input form__input_id_name"
                   placeholder="Name Surname"
+                  required
                 />
               </label>
 
@@ -116,6 +129,7 @@
                   max="8"
                   class="form__input"
                   placeholder="1-8"
+                  required
                 />
               </label>
               <label for="date-time" class="form__label"
@@ -124,6 +138,7 @@
                   id="date-time"
                   type="datetime-local"
                   class="form__input"
+                  required
                 />
               </label>
               <label for="email" class="form__label">
@@ -133,13 +148,19 @@
                   type="email"
                   class="form__input"
                   placeholder="email@email.com"
+                  required
                 />
               </label>
             </fieldset>
-            <button class="form__button">Book a table</button>
+            <button type="button" class="form__button">Book a table</button>
 
             <label for="checkbox" class="form__label form__label_type_checkbox">
-              <input id="checkbox" type="checkbox" class="form__checkbox" />
+              <input
+                id="checkbox"
+                type="checkbox"
+                class="form__checkbox"
+                required
+              />
               I agree with the term of use
             </label>
           </form>
@@ -154,7 +175,7 @@
           </p>
 
           <ul class="menu__cards">
-            <li class="card">
+            <li class="menu__card">
               <h3 class="card__title">Filter</h3>
 
               <ul class="card__list">
@@ -262,11 +283,9 @@
 
       <footer class="footer" id="footer">
         <div class="footer__content">
-          <div class="footer__logo">
-            <img src="./images/logo_coffeeshop_light.svg" />
-          </div>
+          <img src="./images/logo_coffeeshop_light.svg" class="footer__logo" />
 
-          <div class="social-media">
+          <div class="footer__social-media">
             <h3 class="footer__social-heading">Social media</h3>
 
             <ul class="footer__list">
