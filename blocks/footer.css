@@ -1,10 +1,12 @@
 .footer {
-  padding: 60px 80px 108px 80px;
+  padding: 0;
+  margin: 0;
   background-color: #0a2850;
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
 }
 
 .footer__content {
+  padding: 60px 80px 108px;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -58,7 +60,7 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin: 0 10px 0;
+  margin: 0 10px 0 0;
 }
 
 .footer__social-link:hover {
@@ -68,6 +70,7 @@
 .footer__copyright {
   color: white;
   padding: 0;
+  margin-bottom: 60px;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
